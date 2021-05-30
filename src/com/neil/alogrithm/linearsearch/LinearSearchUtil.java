@@ -1,4 +1,4 @@
-package com.neil.alogrithm.linear_search;
+package com.neil.alogrithm.linearsearch;
 
 import com.neil.alogrithm.ArrayGenerator;
 
