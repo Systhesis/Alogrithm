@@ -27,9 +27,9 @@ public class SortingHelper {
         try {
             Class clazz = Class.forName(sortName);
 //            Object obj = clazz.newInstance();
-            Method[] methods = clazz.getMethods();
+            Method[] methods = clazz.getDeclaredMethods();
             for (Method method : methods) {
-                if("sort".equals(method)) {
+                if("sort".equals(method.getName())) {
                     method.invoke(null, (Object) arr);
                 }
             }
@@ -42,9 +42,17 @@ public class SortingHelper {
         double time = (endTime - startTime) / 1000000000.0;
 
         if(!SortingHelper.isSorted(arr)) {
+            //printlnArr(arr);
             throw new RuntimeException("Selection sort failed!!!");
         }
 
-        System.out.println(time + "s");
+        //printlnArr(arr);
+        System.out.println(String.valueOf(time) + "s");
+    }
+
+    private static<E> void printlnArr(E[] arr) {
+        for(E obj : arr) {
+            System.out.println(obj);
+        }
     }
 }

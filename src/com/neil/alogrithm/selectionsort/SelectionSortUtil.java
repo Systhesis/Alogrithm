@@ -49,7 +49,7 @@ public class SelectionSortUtil {
 //        SelectionSortUtil.sort(students);
 //        SelectionSortUtil.printlnArr(students);
 
-        int n = 10;
+        int n = 100000;
         Integer[] arr = ArrayGenerator.generatorRandomArray(n, n);
 
 //        long startTime = System.nanoTime();
@@ -68,9 +68,5 @@ public class SelectionSortUtil {
 
     }
 
-    private static<E> void printlnArr(E[] arr) {
-        for(E obj : arr) {
-            System.out.println(obj);
-        }
-    }
+
 }
