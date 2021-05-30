@@ -8,7 +8,7 @@ import com.neil.alogrithm.ArrayGenerator;
  * @description TODO
  * @date 2021/5/29 下午8:57
  **/
-public class LinearSearchUtil<T> {
+public class LinearSearchUtil {
     private LinearSearchUtil() {}
 
     public static<T> int search(T[] data, T target) {
