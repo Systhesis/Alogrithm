@@ -52,18 +52,6 @@ public class SelectionSortUtil {
         int n = 100000;
         Integer[] arr = ArrayGenerator.generatorRandomArray(n, n);
 
-//        long startTime = System.nanoTime();
-//        SelectionSortUtil.sort(arr);
-//        long endTime = System.nanoTime();
-//
-//        double time = (endTime - startTime) / 1000000000.0;
-//
-//        if(!SortingHelper.isSorted(arr)) {
-//            throw new RuntimeException("Selection sort failed!!!");
-//        }
-//
-//        System.out.println(time + "s");
-
         SortingHelper.sortTest("com.neil.alogrithm.selectionsort.SelectionSortUtil", arr);
 
     }
