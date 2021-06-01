@@ -1,9 +1,7 @@
-package com.neil.alogrithm.selectionsort;
+package com.neil.algorithm.selectionsort;
 
-import com.neil.alogrithm.ArrayGenerator;
-import com.neil.alogrithm.SortingHelper;
-import com.neil.alogrithm.entity.Student;
-import com.neil.alogrithm.linearsearch.LinearSearchUtil;
+import com.neil.algorithm.ArrayGenerator;
+import com.neil.algorithm.SortingHelper;
 
 /**
  * @author neil zhong

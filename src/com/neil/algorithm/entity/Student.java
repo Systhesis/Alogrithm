@@ -1,4 +1,4 @@
-package com.neil.alogrithm.entity;
+package com.neil.algorithm.entity;
 
 import java.util.Objects;
 
