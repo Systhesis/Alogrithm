@@ -1,6 +1,4 @@
-package com.neil.alogrithm;
-
-import com.neil.alogrithm.selectionsort.SelectionSortUtil;
+package com.neil.algorithm;
 
 import java.lang.reflect.Method;
 

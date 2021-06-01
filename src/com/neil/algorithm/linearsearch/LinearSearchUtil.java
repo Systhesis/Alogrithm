@@ -1,6 +1,6 @@
-package com.neil.alogrithm.linearsearch;
+package com.neil.algorithm.linearsearch;
 
-import com.neil.alogrithm.ArrayGenerator;
+import com.neil.algorithm.ArrayGenerator;
 
 /**
  * @author nan2.zhong

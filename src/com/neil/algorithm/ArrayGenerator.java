@@ -1,4 +1,4 @@
-package com.neil.alogrithm;
+package com.neil.algorithm;
 
 import java.util.Random;
 
