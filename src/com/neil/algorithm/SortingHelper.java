@@ -41,7 +41,7 @@ public class SortingHelper {
 
         if(!SortingHelper.isSorted(arr)) {
             //printlnArr(arr);
-            throw new RuntimeException("Selection sort failed!!!");
+            throw new RuntimeException("sort failed!!!");
         }
 
         //printlnArr(arr);
