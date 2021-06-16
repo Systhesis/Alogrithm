@@ -29,6 +29,18 @@ public class InsertionSortUtil {
 
     }
 
+    public static <E extends Comparable<E>> void sort(E[] arr, int l, int r) {
+
+        for (int i = l; i <= r; i++) {
+
+            for (int j = i; j - 1 >= l && arr[j].compareTo(arr[j-1]) < 0; j--) {
+                swap(arr, j, j - 1);
+            }
+
+        }
+
+    }
+
     public static <E extends Comparable<E>> void sort2(E[] arr) {
         for (int i = 0; i < arr.length; i++) {
             E t = arr[i];

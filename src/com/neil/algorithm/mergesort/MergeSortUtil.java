@@ -11,10 +11,26 @@ import java.util.Arrays;
 public class MergeSortUtil {
     private MergeSortUtil(){}
 
+    //自顶向下的归并排序
     public static <E extends Comparable<E>> void sort(E[] arr) {
 
         sortRecursion(arr, 0, arr.length - 1);
 
+    }
+
+    //自底向上的归并排序
+    public static <E extends Comparable<E>> void sortBu(E[] arr) {
+        int n = arr.length;
+        //遍历合并区间的长度
+        for(int sz = 1; sz < n; sz += sz) {
+            //遍历合并的两个区间的起始位置
+            //合并 [i, i+sz-1] 和 [i+sz, i+sz+sz-1]
+            for(int i = 0; i + sz < n  ;i += sz + sz) {
+                if(arr[i+sz-1].compareTo(arr[i+sz]) > 0) {
+                    merge(arr, i, i+sz-1, Math.min(i+sz+sz-1, n - 1));
+                }
+            }
+        }
     }
 
     public static <E extends Comparable<E>> void sortRecursion(E[] arr, int l, int r) {
