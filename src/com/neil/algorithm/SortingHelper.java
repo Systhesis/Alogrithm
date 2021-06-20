@@ -27,7 +27,7 @@ public class SortingHelper {
 //            Object obj = clazz.newInstance();
             Method[] methods = clazz.getDeclaredMethods();
             for (Method method : methods) {
-                if("sort".equals(method.getName())) {
+                if("sort".equals(method.getName()) && method.getParameterCount() == 1) {
                     method.invoke(null, (Object) arr);
                 }
             }
