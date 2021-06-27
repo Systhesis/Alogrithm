@@ -75,4 +75,21 @@ public class BinarySearchUtil {
         }
         return u;
     }
+
+    //小于target的最大值索引
+    public static <E extends Comparable<E>> int lower(E[]data, E target) {
+        int l = -1, r = data.length - 1;
+
+        //在data[l, r]中寻找解
+        while(l < r) {
+            //int mid = (l + r) / 2;
+            int mid = l + (r - l + 1) / 2; //防止l == mid 时 设置l = mid 死循环
+            if(data[mid].compareTo(target) < 0) {
+                l = mid;
+            } else {
+                r = mid - 1;
+            }
+        }
+        return l; // return r;
+    }
 }
