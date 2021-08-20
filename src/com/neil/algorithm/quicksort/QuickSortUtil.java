@@ -103,6 +103,7 @@ public class QuickSortUtil {
                 //arr[i] == arr[l]
                 i++;
             }
+
         }
 
         swap(arr, lt, l);
