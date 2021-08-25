@@ -59,6 +59,10 @@ public class TimeOutPool {
 
     }
 
+    synchronized void remove(String id) {
+
+    }
+
 
      synchronized long cleanUp(long now) {
         long minWait = Long.MIN_VALUE;
